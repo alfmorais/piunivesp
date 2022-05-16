@@ -18,3 +18,6 @@ create-migrate:
 
 create-superuser:
 	@docker-compose run web python legalproject/manage.py createsuperuser
+
+install-requirements:
+	@pip install -r requirements.txt

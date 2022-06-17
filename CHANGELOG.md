@@ -17,6 +17,7 @@ Seguindo as seguintes regras:
 ### Added
 
 2022-05-15 - Issue #000 - Configuração Inicial do Projeto
+2022-06-16 - Issue #000 - Re-Configuração Inicial do Projeto
 
 ### Fixed
 

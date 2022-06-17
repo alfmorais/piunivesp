@@ -1,23 +1,24 @@
 build:
-	@docker-compose build
+	@sudo docker compose build
 
 build-no-cache:
-	@docker-compose build --no-cache
+	@sudo docker compose build --no-cache
 
 run:
-	@docker-compose up
+	@sudo docker compose up
 
 tests:
-	@docker-compose run web pytest -s
+	@sudo docker compose run --rm web sh -c "python manage.py test --verbosity 2 --force-color"
 
 migrate:
-	@docker-compose run web python legalproject/manage.py migrate
+	@sudo docker compose run --rm web sh -c "python manage.py migrate"
 
 create-migrate:
-	@docker-compose run web python legalproject/manage.py makemigrations
+	@sudo docker compose run --rm web sh -c "python manage.py makemigrations"
 
 create-superuser:
-	@docker-compose run web python legalproject/manage.py createsuperuser
+	@sudo docker compose run --rm web sh -c "python manage.py createsuperuser"
 
 install-requirements:
 	@pip install -r requirements.txt
+	@pip install -r requirements-dev.txt

@@ -7,10 +7,10 @@
 * Requisitos do Projeto:
 
   * Python 3.8 ou superior
-  * Docker e docker-compose
+  * Docker version 20.10.16
+  * Docker Compose version v2.5.0
 
 * Clone do [projeto](https://github.com/alfmorais/piunivesp) para a sua máquina local.
-* Pegue as variáveis de ambiente no GitHub Secrets
 * Rode o comando:
 
 ```bash
